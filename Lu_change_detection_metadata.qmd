@@ -1,0 +1,55 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis version="3.16.10-Hannover">
+  <identifier>LULC change detection</identifier>
+  <parentidentifier>ESA Sentinel 2 MSI product </parentidentifier>
+  <language>ENG</language>
+  <type>dataset</type>
+  <title>Landuse Change Detection of Chittagong Metropolitan Area from 2016 to 2021</title>
+  <abstract>This data is about Landuse and landcover change detection from 2016 to 2021 in Chittagong Metropolitan area. First, Sentinel 2A  and Sentinel 2B satellite imageries were acquired for 2016 and 2021 respectively from USGS earth explorar and Scihub copernicus websites. Although the data source are different, both datasets are hosted by ESA, based on digital numbers and 10 m resolution. On preprocessing steps, only band 4, 3, 2 were used to make a true color compoiste. Then landuse supervised classification was carried out for both imageries based on maximul likelihood algorithm with five classes: Waterbody, Vegetation, Agricultural land, Built area and Bare soil. Next, the images undergone Landuse change detection analysis, 2016 as a reference year and 2021 as the new year. The final output contains 25 landuse conversion classes (along with one unclassified class) that visualize how rapidly the Landuse and landcover in Chittagong Metropolitan Area changed. According to the calculation, 41.44 Km2 croplands, 55.76 Km2 Vegetation, 18.36 Km2 waterbody, 46.33 Km2 bare soil converted to built area during the expanse of 5 years. The findings indicate that, Chittagong has been experiencing dramatic landcover change where green areas like forests, hills, hillocks, coastal plantation etc. are cleared and replaced by agricultural lands, human settlements, industries and commercial activities. </abstract>
+  <keywords vocabulary="gmd:topicCategory">
+    <keyword>Environment</keyword>
+    <keyword>Imagery Base Maps Earth Cover</keyword>
+  </keywords>
+  <contact>
+    <name>European Space Agency</name>
+    <organization>European Space Agency</organization>
+    <position></position>
+    <voice>+33 1 53 69 76 54</voice>
+    <fax></fax>
+    <email>spaceinimages@esa.int</email>
+    <role>owner</role>
+  </contact>
+  <links>
+    <link url="https://earthexplorer.usgs.gov/" description="Download link of  images from USGS earth explorer " type="download" size="" mimeType="" format="ZIP" name="2016 Sentinel 2A image"/>
+    <link url="https://scihub.copernicus.eu/dhus/#/home" description="Download link of sentinel images from Scihub copernicus website" type="download" size="" mimeType="" format="ZIP" name="2021 Sentinel 2B Image"/>
+  </links>
+  <history>Landuse classification of 2016 and 2021 based on Sentinel 2A and 2B MSI products (10m resolution) hosted by ESA. ESA preprossesed the data with atmospheric and geometric correction. After downloading the preprocessesd data, supervised classification was done with 5 landuse classes. Then further land use change detection was measured.</history>
+  <fees>Free</fees>
+  <constraints type="access">Some datasets are offline and given upon request, so may requires one or two days to be on hand</constraints>
+  <constraints type="use">Use for non-commercial pupose only</constraints>
+  <rights>European Space Agency - ESA</rights>
+  <license>Open Data Commons Public Domain Dedication and Licence</license>
+  <encoding></encoding>
+  <crs>
+    <spatialrefsys>
+      <wkt>PROJCRS["Gulshan 303 / Bangladesh Transverse Mercator",BASEGEOGCRS["Gulshan 303",DATUM["Gulshan 303",ELLIPSOID["Everest 1830 (1937 Adjustment)",6377276.345,300.8017,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4682]],CONVERSION["Bangladesh Transverse Mercator",METHOD["Transverse Mercator",ID["EPSG",9807]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",90,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["Scale factor at natural origin",0.9996,SCALEUNIT["unity",1],ID["EPSG",8805]],PARAMETER["False easting",500000,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",-2000000,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["(E)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["(N)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["Spatial referencing including water resource management."],AREA["Bangladesh - onshore."],BBOX[20.52,88.01,26.64,92.67]],ID["EPSG",9678]]</wkt>
+      <proj4>+proj=tmerc +lat_0=0 +lon_0=90 +k=0.9996 +x_0=500000 +y_0=-2000000 +ellps=evrst30 +towgs84=283.729,735.942,261.143,0,0,0,0 +units=m +no_defs</proj4>
+      <srsid>0</srsid>
+      <srid>0</srid>
+      <authid>EPSG:9678</authid>
+      <description>Gulshan 303 / Bangladesh Transverse Mercator</description>
+      <projectionacronym>tmerc</projectionacronym>
+      <ellipsoidacronym>EPSG:7015</ellipsoidacronym>
+      <geographicflag>false</geographicflag>
+    </spatialrefsys>
+  </crs>
+  <extent>
+    <spatial maxy="495500" maxx="709860" minz="0" maxz="0" miny="445870" minx="673290" crs="EPSG:9678" dimensions="2"/>
+    <temporal>
+      <period>
+        <start></start>
+        <end></end>
+      </period>
+    </temporal>
+  </extent>
+</qgis>
