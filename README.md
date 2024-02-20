@@ -12,3 +12,18 @@ Around 150 (Region of Interest) ROIs were drawn for all landcover classes each y
 
 
 Results are described in the presentation and the report files
+
+LULC change detection:
+
+![image](https://github.com/sourav-karma/urban_expansion_chittagong/assets/145971753/200e7fe1-a388-4f94-820f-f13b3f06ce03)
+
+
+![image](https://github.com/sourav-karma/urban_expansion_chittagong/assets/145971753/e3c4f431-935a-4028-8c78-8870fdff33db)
+
+Land-use share by the buffer areas: 
+
+![image](https://github.com/sourav-karma/urban_expansion_chittagong/assets/145971753/14b8f2ca-8091-4d02-8e7e-ed406f04736f)
+
+![image](https://github.com/sourav-karma/urban_expansion_chittagong/assets/145971753/12ec175a-4184-46e8-a003-e529ddbc9e07)
+
+
